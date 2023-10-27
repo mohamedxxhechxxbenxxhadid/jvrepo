@@ -22,7 +22,15 @@ public sealed abstract class Aquatic extends Animal permits Dolphin,Penguin{
     }
 
     public abstract void swim() ;
-    public boolean equals(Aquatic aquatic){
-        return this.getName().equals(aquatic.getName()) && this.getAge() == aquatic.getAge() && this.getHabitat().equals(aquatic.getHabitat());
+    @Override
+    public boolean equals(Object obj){
+        System.out.println(super.getName());
+        if(obj == null)
+            return false;
+        if(obj == this)
+            return true;
+        if (obj instanceof Aquatic aquatic)
+            return this.getName().equals(aquatic.getName()) && this.getAge() == aquatic.getAge() && this.getHabitat().equals(aquatic.getHabitat());
+        return false;
     }
 }

@@ -1,9 +1,6 @@
 package tn.esprit.gestion.main;
 
-import tn.gestion.zoo.entities.Animal;
-import tn.gestion.zoo.entities.Dolphin;
-import tn.gestion.zoo.entities.Penguin;
-import tn.gestion.zoo.entities.Zoo;
+import tn.gestion.zoo.entities.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -77,6 +74,7 @@ public class Main {
         myZoo.displayNumberOfAquaticsByType();
         System.out.println("=======instruction 31=========");
         System.out.println(penguin.equals(penguin1));
+
         // instruction 8: je remarque qu'il affiche la reference du objet MyZoo
         // instruction 9 : after i added string toString method it worked fine
     }

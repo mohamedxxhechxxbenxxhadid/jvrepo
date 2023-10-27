@@ -197,7 +197,7 @@ public class Zoo {
         for(Aquatic aquaAnimal : aquaticAnimals){
             if(aquaAnimal == null)
                 break;
-            if(aquaAnimal instanceof Penguin penguin){
+            if(aquaAnimal instanceof Penguin){
                 penguinNumber = penguinNumber+1;
             }else{
                 dauphinNumber = dauphinNumber+1 ;
